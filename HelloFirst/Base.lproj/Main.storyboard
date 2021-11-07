@@ -68,9 +68,29 @@
                     <view key="view" contentMode="scaleToFill" id="swL-Z5-WYN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U9c-D2-Duq">
+                                <rect key="frame" x="0.0" y="41" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="t3U-jH-6OD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="t3U-jH-6OD" firstAttribute="bottom" secondItem="U9c-D2-Duq" secondAttribute="bottom" id="E0e-fM-cNh"/>
+                            <constraint firstItem="U9c-D2-Duq" firstAttribute="top" secondItem="t3U-jH-6OD" secondAttribute="top" id="EQQ-2m-8aM"/>
+                            <constraint firstItem="U9c-D2-Duq" firstAttribute="leading" secondItem="t3U-jH-6OD" secondAttribute="leading" id="N9x-1l-5a6"/>
+                            <constraint firstItem="U9c-D2-Duq" firstAttribute="centerX" secondItem="swL-Z5-WYN" secondAttribute="centerX" id="diK-dK-FUD"/>
+                            <constraint firstItem="t3U-jH-6OD" firstAttribute="trailing" secondItem="U9c-D2-Duq" secondAttribute="trailing" id="wVN-0E-p7U"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="WebViewMain" destination="U9c-D2-Duq" id="LRH-XK-buL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xei-dT-pa1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
