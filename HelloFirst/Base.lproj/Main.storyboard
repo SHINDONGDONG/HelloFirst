@@ -37,16 +37,16 @@
                                 <rect key="frame" x="140" y="406" width="135" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Move"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Webkit"/>
                                 <connections>
                                     <action selector="Click_moveBtn:" destination="xQF-3k-q3N" eventType="touchUpInside" id="nmz-1W-B9C"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UDc-uW-sHm">
-                                <rect key="frame" x="173" y="550" width="70" height="31"/>
+                                <rect key="frame" x="165" y="550" width="87" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Detail2"/>
+                                <buttonConfiguration key="configuration" style="filled" title="tableView"/>
                                 <connections>
                                     <action selector="Detail2:" destination="xQF-3k-q3N" eventType="touchUpInside" id="ZFj-hb-Wya"/>
                                 </connections>
@@ -104,17 +104,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detail2 입니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5K-fG-yrh">
-                                <rect key="frame" x="110" y="429" width="195" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nDn-3a-2gN">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hGu-bg-NxZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nDn-3a-2gN" firstAttribute="leading" secondItem="hGu-bg-NxZ" secondAttribute="leading" id="3ao-O3-8F9"/>
+                            <constraint firstItem="hGu-bg-NxZ" firstAttribute="bottom" secondItem="nDn-3a-2gN" secondAttribute="bottom" id="aZR-OE-8SZ"/>
+                            <constraint firstItem="nDn-3a-2gN" firstAttribute="top" secondItem="hGu-bg-NxZ" secondAttribute="top" id="cu9-5w-ruE"/>
+                            <constraint firstItem="hGu-bg-NxZ" firstAttribute="trailing" secondItem="nDn-3a-2gN" secondAttribute="trailing" id="igZ-QC-SGW"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="TableViewMain" destination="nDn-3a-2gN" id="SUi-gS-BeJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tUb-yf-whE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
