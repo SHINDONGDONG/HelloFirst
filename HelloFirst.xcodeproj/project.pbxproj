@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9B1BAD6127386C0100C1A6EB /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1BAD6027386C0100C1A6EB /* DetailController.swift */; };
 		9B1BAD63273870CA00C1A6EB /* Detail2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1BAD62273870CA00C1A6EB /* Detail2.swift */; };
+		9B234FF52739C99A00C47FFE /* Type1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B234FF42739C99A00C47FFE /* Type1.swift */; };
 		9B8BE89627342CDF0038315F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8BE89527342CDF0038315F /* AppDelegate.swift */; };
 		9B8BE89827342CDF0038315F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8BE89727342CDF0038315F /* SceneDelegate.swift */; };
 		9B8BE89A27342CDF0038315F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8BE89927342CDF0038315F /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		9B1BAD6027386C0100C1A6EB /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		9B1BAD62273870CA00C1A6EB /* Detail2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail2.swift; sourceTree = "<group>"; };
+		9B234FF42739C99A00C47FFE /* Type1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type1.swift; sourceTree = "<group>"; };
 		9B8BE89227342CDF0038315F /* HelloFirst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloFirst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B8BE89527342CDF0038315F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B8BE89727342CDF0038315F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				9B8BE8A327342CDF0038315F /* Info.plist */,
 				9B1BAD6027386C0100C1A6EB /* DetailController.swift */,
 				9B1BAD62273870CA00C1A6EB /* Detail2.swift */,
+				9B234FF42739C99A00C47FFE /* Type1.swift */,
 			);
 			path = HelloFirst;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				9B1BAD63273870CA00C1A6EB /* Detail2.swift in Sources */,
 				9B8BE89627342CDF0038315F /* AppDelegate.swift in Sources */,
 				9B8BE89827342CDF0038315F /* SceneDelegate.swift in Sources */,
+				9B234FF52739C99A00C47FFE /* Type1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
